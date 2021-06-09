@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <h1>Simon Game</h1>
+
+        <div class="main-div">
+
+      
+             
+             <div class="containor-select">
+
+                    <select onclick="chooseLevel(this)" >
+                        <option  disabled="disabled" selected="selected">Choos level</option>
+                        <option value="700">easy</option>
+                        <option value="600">medium</option>
+                        <option value="500">hard</option>
+                        <option value="400">very hard</option>
+                    </select>
+
+                <select id="myselcetval" onchange="choosColors(this)">
+                    <option disabled="disabled" selected="selected">how many colors</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="9">9</option>
+        
+                </select>
+
+
+             </div>
+
+
+             <div class="containor-btns">
+
+
+                <button id="start">Start</button>
+                <button id="reset">Reset</button> 
+
+
+             </div>
+             <h2><span id="level-number"></span></h2>
+                <div class="contanor-game-area">
+                      
+
+
+
+
+
+
+
+                </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+    <script src="JS\javascript.js"></script>
+</body>
+</html>
